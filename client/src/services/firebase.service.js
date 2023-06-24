@@ -6,17 +6,26 @@ import authService from "./auth.service";
 class FirebaseService {
 
     constructor() {
-        this._ADMIN_TOKEN = 'FIREBASE ADMIN TOKEN';
-
+        // this._ADMIN_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZG1pbiIsImlhdCI6MTY4NzU0MDk3OH0.aSwgZVQY3-GntyjbOhIm0z7vE3u84bjVe9NfzQjD1CM';
+        this._ADMIN_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZG1pbiIsImlhdCI6MTY4NTM0NzE2Mn0.XA-2K7XQghzdRjtDDJ-Kv0uFcKwebb7ra1FVjmFjg54';
+        // const firebaseConfig = {
+        //     apiKey: "FIREBASE API KEY",
+        //     authDomain: "FIREBASE DOMAIN",
+        //     projectId: "treasure-hunt",
+        //     storageBucket: "GOOGLE STORAGE BUCKET",
+        //     messagingSenderId: "MESSAGING SENDER ID",
+        //     appId: "APP ID",
+        //     measurementId: "GOOGLE ANALYTICS ID"
+        // }
         const firebaseConfig = {
-            apiKey: "FIREBASE API KEY",
-            authDomain: "FIREBASE DOMAIN",
-            projectId: "treasure-hunt",
-            storageBucket: "GOOGLE STORAGE BUCKET",
-            messagingSenderId: "MESSAGING SENDER ID",
-            appId: "APP ID",
-            measurementId: "GOOGLE ANALYTICS ID"
-        }
+            apiKey: "AIzaSyAzI5tgYOByt3EiE-3J_wdyvMeDI46cZCs",
+            authDomain: "grizzlymuseum-38891.firebaseapp.com",
+            projectId: "grizzlymuseum-38891",
+            storageBucket: "grizzlymuseum-38891.appspot.com",
+            messagingSenderId: "944998395693",
+            appId: "1:944998395693:web:567d44fff66e621283ada4",
+            measurementId: "G-ZNFHDZ67EE"
+            };
 
         const fireApp = initializeApp(firebaseConfig);
         this.fireFunctions = getFunctions(fireApp, 'europe-west1');
